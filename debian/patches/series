@@ -1,0 +1,6 @@
+04_app-defaults.patch
+05_xfig-libs.patch
+06_doc_libraries.patch
+07_missing-config.h.patch
+08_fig-format-doc.patch
+09_repair-table-doc.patch

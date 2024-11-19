@@ -1,0 +1,87 @@
+From: Roland Rosenfeld <roland@debian.org>
+Date: Sat, 30 Jan 2021 15:32:38 +0100
+Subject: Do not use <hr> inside <pre> tag.
+Forwarded: Thomas Loimer <thomas.loimer@tuwien.ac.at> on 2021-01-30
+
+--- a/doc/html/fig-format.html
++++ b/doc/html/fig-format.html
+@@ -75,7 +75,9 @@ hand-fitting may be needed in some patho
+     are associated.  In the case of the "whole figure comments" mentioned
+     below, they immediately precede the (resolution,coord_system) line.
+ 
++</pre>
+ <hr>
++<pre>
+ (2) The first non-comment line consists of the following:
+ 
+ 	string	orientation		("Landscape" or "Portrait")
+@@ -115,7 +117,9 @@ hand-fitting may be needed in some patho
+     ** dash-lengths/dot-gaps are given in 80-ths of an inch.
+ 
+ 
++</pre>
+ <hr>
++<pre>
+ (3) The rest of the file contains various objects.  An object can be one
+     of six classes (or types).
+ 
+@@ -315,7 +319,9 @@ hand-fitting may be needed in some patho
+      hex string	rgb values		(hexadecimal string describing red,
+ 					 green and blue values (e.g. #330099) )
+ 
++</pre>
+ <hr>
++<pre>
+     (3.2) ARC
+ 
+     First line:
+@@ -359,7 +365,9 @@ hand-fitting may be needed in some patho
+ 	float	arrow_width		(Fig units)
+ 	float	arrow_height		(Fig units)
+ 
++</pre>
+ <hr>
++<pre>
+     (3.3) COMPOUND
+ 
+     A line with object code 6 signifies the start of a compound.
+@@ -385,7 +393,9 @@ hand-fitting may be needed in some patho
+     Last line:
+ 	-6
+ 
++</pre>
+ <hr>
++<pre>
+     (3.4) ELLIPSE
+ 
+     First line:
+@@ -411,7 +421,9 @@ hand-fitting may be needed in some patho
+ 	int	start_x, start_y	(Fig units; the 1st point entered)
+ 	int	end_x, end_y		(Fig units; the last point entered)
+ 
++</pre>
+ <hr>
++<pre>
+     (3.5) POLYLINE
+ 
+     First line:
+@@ -459,7 +471,9 @@ hand-fitting may be needed in some patho
+ 	int	xnpoints ynpoints	(this will be the same as the 1st
+ 					point for polygon and box)
+ 
++</pre>
+ <hr>
++<pre>
+     (3.6) SPLINE
+ 
+     First line:
+@@ -500,7 +514,9 @@ hand-fitting may be needed in some patho
+     control point, except when the value of	the factor is 0 for which
+     there is a first-order discontinuity (i.e. angular point).
+ 
++</pre>
+ <hr>
++<pre>
+     (3.7) TEXT
+ 	type	name			(brief description)
+ 	----	----			-------------------
